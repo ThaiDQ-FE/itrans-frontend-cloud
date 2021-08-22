@@ -1,0 +1,96 @@
+.modal__invite {
+    width: 600px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .mi__h2 {
+        text-align: center;
+    }
+    .mi__span {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .mi__des {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .mi__info {
+        display: flex;
+        justify-content: space-between;
+        .mi__money {
+            width: 25%;
+            input {
+                cursor: context-menu;
+                &:hover {
+                    border: 1px solid #d9d9d9;
+                    box-shadow: unset;
+                }
+                &:focus {
+                    border: 1px solid #d9d9d9;
+                    box-shadow: unset;
+                }
+                text-align: right;
+            }
+        }
+        .mi__percent {
+            width: 25%;
+            input {
+                cursor: context-menu;
+                &:hover {
+                    border: 1px solid #d9d9d9;
+                    box-shadow: unset;
+                }
+                &:focus {
+                    border: 1px solid #d9d9d9;
+                    box-shadow: unset;
+                }
+                text-align: right;
+            }
+        }
+        .mi__start {
+            width: 17%;
+            input {
+                cursor: context-menu;
+                &:hover {
+                    border: 1px solid #d9d9d9;
+                    box-shadow: unset;
+                }
+                &:focus {
+                    border: 1px solid #d9d9d9;
+                    box-shadow: unset;
+                }
+            }
+        }
+        .mi__end {
+            width: 17%;
+            input {
+                cursor: context-menu;
+                &:hover {
+                    border: 1px solid #d9d9d9;
+                    box-shadow: unset;
+                }
+                &:focus {
+                    border: 1px solid #d9d9d9;
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+    .mi__description {
+        .mi__desText {
+            resize: unset;
+        }
+        .mi__desTextError {
+            border: 1px solid red;
+            &:hover {
+                border: 1px solid red;
+            }
+        }
+    }
+    .mi__action {
+        text-align: right;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}

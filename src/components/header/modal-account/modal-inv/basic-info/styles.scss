@@ -1,0 +1,104 @@
+.maib__imgWrapper {
+    width: 28%;
+    margin-top: 20px;
+    .maib__image {
+        height: 125px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        padding: 0 20px 0 0;
+        .maib__img {
+            object-fit: cover;
+        }
+        .maib__userAvata {
+            border: 1px dashed red;
+        }
+        .maib__file {
+            display: none;
+        }
+        .maib__camera {
+            width: 15px;
+            height: 15px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            opacity: 0;
+        }
+        &:hover {
+            .maib__camera {
+                opacity: 1;
+            }
+        }
+        .maib__span {
+            position: absolute;
+            cursor: pointer;
+            height: 25px;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            .maib__teamlSpin {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.maib__info {
+    width: 70%;
+    margin-top: 20px;
+    .maib__lineOne {
+        display: flex;
+        justify-content: space-between;
+        .maib__name {
+            width: 55%;
+        }
+        .maib__year,
+        .maib__emp {
+            width: 18.5%;
+            input {
+                text-align: right;
+            }
+        }
+    }
+    .maib__lineTwo {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        .maib__web {
+            width: 38%;
+        }
+        .maib__selectIType {
+            width: 30%;
+            .maib__select {
+                display: block;
+                width: 100%;
+            }
+        }
+        .maib__taxCode {
+            width: 25%;
+        }
+    }
+}
+.label__fontWeight {
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.input__error {
+    border: 1px solid red !important;
+    &:hover {
+        border: 1px solid red !important;
+    }
+}
+.ant-popover {
+    z-index: 1055 !important;
+}

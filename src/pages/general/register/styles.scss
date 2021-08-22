@@ -1,0 +1,23 @@
+.register__wrapper {
+    width: 100%;
+    background-color: rgba(211, 204, 204, 0.5);
+    font-family: "Montserrat", sans-serif;
+    .register__container {
+        .register__form {
+            border-radius: 12px;
+            background-color: #ffffff;
+            .register__body {
+                padding-top: 50px;
+                padding-bottom: 100px;
+
+                background-color: #f0f2f5;
+            }
+        }
+    }
+}
+.MuiStepConnector-alternativeLabel {
+    top: 18px !important;
+    .MuiStepConnector-lineHorizontal {
+        border-color: #ff8412 !important;
+    }
+}

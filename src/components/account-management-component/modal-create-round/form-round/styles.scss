@@ -1,0 +1,31 @@
+.formcr__wrapper {
+    .formcr__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        .formcr__noti {
+            ul {
+                list-style-type: "*";
+                margin-bottom: 0;
+                li {
+                    font-style: italic;
+                    .formcr__stage {
+                        color: green;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    .formcr__active {
+                        color: green;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    .formcr__pending {
+                        color: orange;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

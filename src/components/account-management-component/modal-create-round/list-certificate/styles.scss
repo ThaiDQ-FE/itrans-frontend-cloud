@@ -1,0 +1,105 @@
+.modal__certificateWrapper {
+    height: 50px;
+    .modal__certificateContainer {
+        height: 100%;
+        padding: 5px 10px;
+        border: 1px solid #d9d9d9;
+        .modal__certificateUl {
+            list-style-type: none;
+            overflow-y: hidden;
+            overflow-x: auto;
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            padding: 5px 0;
+            margin: 0;
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: #f5f5f5;
+            }
+
+            &::-webkit-scrollbar {
+                height: 5px;
+                background-color: #f5f5f5;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #000000;
+            }
+            .modal__certificateLi {
+                width: 200px;
+                height: 100%;
+                position: relative;
+                margin: auto 0;
+                border: 1px solid #d9d9d9;
+                padding: 0 10px;
+                .modal__cerA {
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    display: -webkit-box;
+                }
+                &:nth-child(even) {
+                    margin: auto 10px;
+                }
+                .modal__certificateLiX {
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    top: 0;
+                    right: 0;
+                    opacity: 0.5;
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .modal__certificateLiAdd {
+                border: 1px dotted #d9d9d9;
+                margin: auto 0;
+                width: 100px;
+                height: 100%;
+                .modal__addCertificate {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    opacity: 0.4;
+                    cursor: pointer;
+                    .modal__cerLoading {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    .modal__addFile {
+                        display: none;
+                    }
+                    .modal__addPlus {
+                        width: 16px;
+                        height: 16px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        position: absolute;
+                        opacity: 0.8;
+                    }
+                    &:hover {
+                        .modal__addPlus {
+                            opacity: 1;
+                        }
+                    }
+                    .modal__addLabel {
+                        position: absolute;
+                        cursor: pointer;
+                        height: 25px;
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

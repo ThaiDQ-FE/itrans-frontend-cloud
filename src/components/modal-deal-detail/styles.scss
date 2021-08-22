@@ -1,0 +1,96 @@
+#test {
+    padding: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.modal-deal-detail {
+    width: 640px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .mdd__nameLogo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        .mdd__logo {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .mdd__name {
+            line-height: 2.5;
+            font-weight: 700;
+            font-size: 28px;
+            margin-left: 10px;
+        }
+    }
+    .mdd__infoBasic {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        grid-gap: 10px;
+        padding: 10px;
+        box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.06), 0 3px 6px 2px rgba(0, 0, 0, 0.02),
+            0 5px 12px 4px rgba(0, 0, 0, 0.03);
+        background: #f3f3f3;
+        border-radius: 12px;
+    }
+    .mdd__infoDeal {
+        position: relative;
+        padding: 15px 20px;
+        border: 1px solid gray;
+        margin-top: 30px;
+        position: relative;
+        border-radius: 12px;
+        .mdd__titleDeal {
+            position: absolute;
+            top: -20px;
+            font-size: 22px;
+            font-weight: 700;
+            background: white;
+        }
+        .mdd__contentDeal,
+        .mdd__contentTime {
+            display: flex;
+            justify-content: space-between;
+        }
+        .mdd__contentDeal {
+            .mdd__money,
+            .mdd__percent {
+                width: 45%;
+            }
+        }
+        .mdd__contentTime {
+            margin: 10px 0;
+            .mdd__date,
+            .mdd__time {
+                width: 45%;
+            }
+        }
+    }
+    .mdd__active {
+        text-align: right;
+        margin-top: 15px;
+        .mdd__accept {
+            background: #56db56;
+            border-color: #56db56;
+            font-weight: 600;
+            &:hover {
+                background: #24ce24;
+                border-color: #24ce24;
+            }
+        }
+        .mdd__deny {
+            background: #ff3636;
+            border-color: #ff3636;
+
+            font-weight: 600;
+            margin-left: 15px;
+            &:hover {
+                background: red;
+                border-color: red;
+            }
+        }
+    }
+}

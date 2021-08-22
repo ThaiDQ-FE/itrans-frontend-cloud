@@ -1,0 +1,41 @@
+.foc__wrapper {
+    padding: 65px 0 35px 0;
+    .foc__container {
+        padding: 10px 150px;
+        .foc__dislayGrid {
+            box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                0 1px 8px 0 rgba(0, 0, 0, 0.12);
+            display: grid;
+            grid-template-columns: 120px 260px 260px 440px;
+            background-color: #fff;
+            color: #444;
+            padding: 10px;
+            max-height: 138px;
+            grid-gap: 20px;
+            min-width: 1158px;
+            .box {
+                .ant-select {
+                    .ant-select-selector {
+                        max-height: 60px;
+                        overflow: auto;
+                    }
+                }
+                .foc__button {
+                    text-align: right;
+                    margin-top: 5px;
+                    .foc__ht {
+                        margin-left: 15px;
+                    }
+                    .foc__ad {
+                        background: #009dcf;
+                        border-color: #009dcf;
+                        &:hover {
+                            background: #1890ff;
+                            border-color: #1890ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

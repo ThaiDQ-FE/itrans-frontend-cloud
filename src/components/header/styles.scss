@@ -1,0 +1,187 @@
+.header__container {
+    background-color: #112d4e;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.3);
+    z-index: 1051;
+    position: fixed;
+    top: 0;
+    font-family: "Montserrat", sans-serif;
+    .header__logo {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        img {
+            margin-top: 5px;
+            height: 80%;
+            margin-left: 60px;
+        }
+    }
+    .active-mid {
+        background: linear-gradient(to right, #f7f8f8, #acbb78);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+    }
+
+    .header__features {
+        width: 50%;
+        height: 100%;
+        .header__features__ul {
+            list-style-type: none;
+            color: #ffffff;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-around;
+            font-size: 18px;
+            font-weight: 500px;
+            height: 100%;
+            margin-bottom: 0;
+            padding-left: 0;
+            .header__features__li {
+                margin: auto;
+                font-size: 18px;
+                .header__vgv,
+                .header__trangchu {
+                    text-decoration: none;
+                    color: #ffffff;
+                    &:hover {
+                        background: linear-gradient(to right, #f7f8f8, #acbb78);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: 600;
+                    }
+                }
+                .active-nav-link-header-features {
+                }
+            }
+        }
+    }
+    .header__featuresRole {
+        width: 30%;
+    }
+    .header__login {
+        width: 18%;
+        height: 100%;
+        .header__login__ul {
+            height: 100%;
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 0;
+            padding-left: 0;
+            .header__login__li {
+                margin: auto 0;
+                .header__navlink__dangnhap,
+                .header__navlink__dangky {
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    text-decoration: underline;
+                }
+                .header__navlink__dangnhap {
+                    margin-left: 20px;
+                    background-color: #ffffff;
+                    color: #112d4e;
+                    border-radius: 12px;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    padding: 10px 30px;
+                    text-decoration: none;
+                }
+            }
+        }
+        .header__logined {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: flex-end;
+            display: flex;
+            padding: 10%;
+            padding-right: 20%;
+            cursor: pointer;
+
+            img {
+                object-fit: cover;
+                width: 35px;
+                height: 35px;
+            }
+            span {
+                margin-left: 5px;
+                color: white;
+                font-weight: 600;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                display: -webkit-box;
+            }
+        }
+    }
+}
+.header__menuAvata {
+    img {
+        width: 35px;
+        margin-right: 10px;
+    }
+    span {
+        font-weight: 600;
+    }
+}
+.header__menuAccount,
+.header__menuTime,
+.header__menuCapital,
+.header__menuLogout {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    span {
+        margin-left: 25px;
+    }
+}
+.header__menuAccount {
+    span {
+        color: #000;
+        &:hover {
+            color: #000;
+            font-weight: 600;
+        }
+    }
+}
+.header__navlink__quanLyTaiKhoan,
+.header__navlink__quanLyThoiGian {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+        color: #000;
+        font-weight: 600;
+    }
+}
+.header__hr {
+    margin: 3px 5px;
+}
+.menu__navbar {
+    z-index: 6001 !important;
+    .MuiPopover-paper {
+        top: 8% !important;
+        left: unset !important;
+        right: 3% !important;
+    }
+}
+.class_disable {
+    display: none;
+}
+
+.text__workBreak {
+    word-break: break-word;
+}

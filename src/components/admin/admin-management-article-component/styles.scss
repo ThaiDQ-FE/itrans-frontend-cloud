@@ -1,0 +1,89 @@
+.amac__wrapper {
+    height: 688.6px;
+    padding: 20px 10px 40px 10px;
+    position: relative;
+    .amac__container {
+        display: flex;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        justify-content: space-between;
+        padding: 0 25px;
+        .amac__title {
+            width: 45%;
+        }
+        .amac__search {
+            width: 45%;
+        }
+    }
+    .amac__box {
+        max-height: calc(100% - 110px);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+        overflow: hidden;
+        overflow-y: auto;
+        padding: 15px;
+        .amac__articleWrappers {
+            position: relative;
+            .anac__articleWrapper {
+                display: flex;
+                justify-content: space-between;
+                max-height: 200px;
+                box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.4), 0 3px 4px 0 rgba(0, 0, 0, 0.24),
+                        0 1px 8px 0 rgba(0, 0, 0, 0.22);
+                }
+            }
+            &:hover {
+                .adminArticle__action {
+                    opacity: 1;
+                }
+            }
+            .adminArticle__action {
+                position: absolute;
+                top: -5px;
+                right: 5px;
+                opacity: 0;
+                img {
+                    width: 12px;
+                    height: 12px;
+                    opacity: 0.5;
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .amac__item {
+            background: gray;
+            padding: 20px;
+            height: 60px;
+        }
+    }
+    .adminArticle__noBox {
+        display: block;
+        margin-top: 150px;
+        text-align: center;
+        .adminArticle__empty {
+            width: 75px;
+            height: 75px;
+            display: block;
+            margin: auto;
+        }
+        .adminArticle__noArticle {
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+    .amac__paging {
+        text-align: right;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+    }
+}

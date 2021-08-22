@@ -1,0 +1,33 @@
+.uf__wrapper {
+    background-color: #112d4e;
+    padding: 20px 40px;
+    color: #fff;
+    .uf__container {
+        display: flex;
+        justify-content: space-evenly;
+        .uf__logo {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .uf__contact {
+            display: flex;
+            margin: auto;
+            .uf__HCM {
+                margin-bottom: 10px;
+                .uf__truSo {
+                    margin-right: 5px;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+                .uf__diaChi {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+.uf__loading {
+    display: none;
+}

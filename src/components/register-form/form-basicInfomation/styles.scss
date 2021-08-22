@@ -1,0 +1,120 @@
+.fbi__wrapper {
+    width: 28vw;
+    min-height: 410px;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat", sans-serif;
+    .fbi__container {
+        width: 100%;
+        height: auto;
+        h3 {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .fbi__form {
+            width: 100%;
+            padding: 25px 65px;
+
+            .fbi__gmail {
+                input {
+                    font-size: 16px;
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .fbi__password {
+                margin: 20px 0;
+                input {
+                    font-size: 16px;
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .fbi__confirmPassword {
+                input {
+                    font-size: 16px;
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .fbi__groupGmail {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                .fbi__confirmGmail {
+                    width: 45%;
+                    .fbi__getCode {
+                        margin-top: 21px;
+                        width: 100%;
+                        height: 45px;
+                        &:focus-visible {
+                            outline-color: #ff8412;
+                            outline-width: unset;
+                            outline-offset: unset;
+                            outline-style: unset;
+                        }
+                        &:active {
+                            border-style: solid;
+                        }
+                        border-radius: 7px;
+                        border: 1px solid #ff8412;
+                        background: #ff8412;
+                        color: #ffffff;
+                        &:hover {
+                            box-shadow: 0px 5px 14px -3px rgba(0, 0, 0, 0.2);
+                            background: #ff820e;
+                        }
+                    }
+                    .fbi__getCodeDis {
+                        background: gray;
+                        border-color: gray;
+                        &:hover {
+                            box-shadow: unset;
+                            background: gray;
+                        }
+                    }
+                }
+
+                .fbi__inputConfirmGmail {
+                    width: 45%;
+                    input {
+                        font-size: 16px;
+                        &:focus {
+                            box-shadow: unset;
+                        }
+                    }
+                }
+            }
+        }
+        .fbi__button {
+            margin-top: 10px;
+            width: 100%;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            .fbi__buttonWrapper {
+                width: 70px;
+                margin-right: 20px;
+                opacity: 0.5;
+                cursor: pointer;
+                img {
+                    margin-right: 21px;
+                    width: 16px;
+                    text-align: right;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

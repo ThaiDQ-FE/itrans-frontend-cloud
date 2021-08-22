@@ -1,0 +1,32 @@
+.cd__wrapper {
+    padding: 25px;
+    .cd__container {
+        padding: 25px 15px;
+        box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    }
+}
+
+#src {
+    width: 25px;
+    height: 25px;
+}
+.deal__qlvgvAction {
+    display: flex;
+    justify-content: flex-start;
+    .deal__edit,
+    .deal__trash,
+    .deal__save,
+    .deal__done,
+    .deal__cancel {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        margin: 0 5px;
+        img {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

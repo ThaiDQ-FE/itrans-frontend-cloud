@@ -1,0 +1,192 @@
+.ot__right {
+    width: 65%;
+    .oc__noMediaRender {
+        text-align: center;
+    }
+    .right__image {
+        width: 100%;
+        height: 450px;
+        border: 5px;
+        border-style: double;
+        border-radius: 2px;
+        border-color: #dad6d6;
+        margin-bottom: 20px;
+        position: relative;
+        &:hover {
+            .oc__actionAPI {
+                opacity: 1;
+            }
+        }
+        .oc__actionAPI {
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0;
+            z-index: 5000;
+            .oc__deleteMedia,
+            .oc__createMedia {
+                z-index: 5000;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                margin: 0 5px;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .slick-slider {
+        height: 450px;
+        border: 5px;
+        border-style: double;
+        border-radius: 2px;
+        border-color: #dad6d6;
+        .slick-arrow {
+            &::before {
+                color: black;
+                opacity: 0.4;
+            }
+        }
+        .slick-list {
+            height: 100%;
+            .slick-track {
+                height: 100%;
+                div {
+                    height: 100%;
+                    .media__slick {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        img,
+                        video {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &:hover {
+                            .oc__actionAPI {
+                                opacity: 1;
+                            }
+                        }
+                        .oc__actionAPI {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            opacity: 0;
+                            display: flex;
+                            z-index: 5000;
+                            .oc__deleteMedia,
+                            .oc__createMedia {
+                                z-index: 5000;
+                                width: 16px;
+                                height: 16px;
+                                cursor: pointer;
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ot__introduce {
+        position: relative;
+        .oc__noIntroduceRender {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .ot__ocAddIntro {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            top: -5px;
+            right: -5px;
+            opacity: 0;
+        }
+        &:hover {
+            .ot__ocAddIntro {
+                opacity: 1;
+                z-index: 100;
+            }
+        }
+        .ot__introduceWrapper {
+            margin: 20px 0;
+            position: relative;
+            .ot__title {
+                font-weight: 600;
+                font-size: 26px;
+            }
+            .ot__content {
+                margin: 0;
+                font-size: 18px;
+                padding: 0 45px;
+            }
+            .otOc__action {
+                position: absolute;
+                top: 10px;
+                right: 0;
+                opacity: 0;
+                img {
+                    margin: 0 5px;
+                    width: 10px;
+                    height: 10px;
+                    cursor: pointer;
+                }
+            }
+            &:hover {
+                .otOc__action {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .right__wrapper {
+        position: relative;
+        .ot__rightEdit {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 0;
+            img {
+                opacity: 0.5;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .first {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    .right__weight {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+.ot__rightNoData {
+    width: 65%;
+    text-align: center;
+    display: flex;
+    .ot__rightNoDataWrapper {
+        margin: auto;
+        p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        button {
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.modal__update__round {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px !important;
+    .ur__form {
+        .ur__line1 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            .ur__money {
+                width: 22%;
+            }
+            .ur__percent {
+                width: 27%;
+            }
+            .ur__startDate {
+                width: 18%;
+            }
+            .ur__endDate {
+                width: 18%;
+            }
+        }
+        .ur__button {
+            margin-top: 20px;
+            text-align: right;
+        }
+    }
+}
+.ur__dropdown {
+    z-index: 1053 !important;
+}
+.ur__inputRight {
+    text-align: right;
+}

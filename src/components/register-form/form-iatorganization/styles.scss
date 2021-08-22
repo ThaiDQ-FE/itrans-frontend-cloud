@@ -1,0 +1,211 @@
+.fiato__wrapper {
+    width: 60vw;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: auto;
+    border-radius: 12px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    .fiato__container {
+        width: 100%;
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 35px;
+        }
+        .fiato__form {
+            padding: 0 55px;
+            .fiato__basicInfo {
+                display: flex;
+                justify-content: space-between;
+                .fiato__imgWrapper {
+                    width: 25%;
+                    .fiato__imageInfo {
+                        height: 125px;
+                        margin-bottom: 20px;
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                        position: relative;
+                        padding: 0 20px 0 0;
+                        .fiato__userLogo {
+                            object-fit: cover;
+                        }
+                        .modal__userAvata {
+                            border: 1px dashed red;
+                        }
+                        .fiato__file {
+                            display: none;
+                        }
+
+                        &:hover {
+                            .fiato__camera {
+                                opacity: 1;
+                            }
+                        }
+                        .fiato__span {
+                            position: absolute;
+                            cursor: pointer;
+                            height: 25px;
+                            right: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 100%;
+                            &:hover {
+                                .fiato__camera {
+                                    opacity: 1;
+                                }
+                            }
+                            .modal__inLABELSpin {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            .fiato__camera {
+                                width: 16px;
+                                height: 16px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+
+                .fiato__infoBasic {
+                    width: 70%;
+                    .fiato__lineOne {
+                        display: flex;
+                        justify-content: space-between;
+                        .fiato__name {
+                            width: 50%;
+                        }
+                        .fiato__year,
+                        .fiato__emp {
+                            width: 18.5%;
+                            input {
+                                text-align: right;
+                            }
+                        }
+                    }
+                    .fiato__lineTwo {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        .fiato__linkWebsite {
+                            width: 40%;
+                        }
+                        .fiato__giaiDoanPhatTrien {
+                            width: 28%;
+                            .fiato__selectStage {
+                                display: block;
+                            }
+                        }
+                        .fiato__taxCode {
+                            width: 27%;
+                        }
+                    }
+                }
+            }
+            .fiato__selectInfo {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                .fiato__linhVucKinhDoanh {
+                    width: 65%;
+                    .fiato__selectIndus {
+                        display: block;
+                        .ant-select-selector {
+                            max-height: 112px;
+                            overflow-x: hidden;
+                            overflow-y: auto;
+                            &::-webkit-scrollbar-track {
+                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                border-radius: 10px;
+                                background-color: #f5f5f5;
+                            }
+
+                            &::-webkit-scrollbar {
+                                width: 5px;
+                                background-color: #f5f5f5;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 10px;
+                                -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                                background-color: #555;
+                            }
+                        }
+                    }
+                }
+                .fiato__khuVucHoatDong {
+                    width: 30%;
+                    .fiato__selectPro {
+                        display: block;
+                        .ant-select-selector {
+                            max-height: 112px;
+                            overflow-x: hidden;
+                            overflow-y: auto;
+                            &::-webkit-scrollbar-track {
+                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                border-radius: 10px;
+                                background-color: #f5f5f5;
+                            }
+
+                            &::-webkit-scrollbar {
+                                width: 5px;
+                                background-color: #f5f5f5;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 10px;
+                                -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                                background-color: #555;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fiato__button {
+            display: flex;
+            justify-content: space-between;
+            .fiato__buttonLeft {
+                opacity: 0.5;
+                transition: all 0.2s;
+                cursor: pointer;
+                margin-left: 20px;
+                margin-bottom: 15px;
+                img {
+                    width: 15px;
+                    transform: rotate(180deg);
+                    display: block;
+                    margin: auto;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .fiato__buttonRight {
+                opacity: 0.5;
+                transition: all 0.2s;
+                cursor: pointer;
+                margin-right: 20px;
+                margin-bottom: 15px;
+                img {
+                    display: block;
+                    width: 15px;
+                    margin: auto;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

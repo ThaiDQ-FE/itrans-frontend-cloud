@@ -1,0 +1,32 @@
+.modal__milestone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .milestone__form {
+        .milestone__line1 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            .milestone__title {
+                width: 70%;
+                .milestone__titleError {
+                    border: 1px solid red;
+                }
+            }
+            .milestone__date {
+                width: 25%;
+                .milestone__dateError {
+                    border: 1px solid red;
+                }
+            }
+        }
+        .milestone__button {
+            margin-top: 20px;
+            text-align: right;
+        }
+    }
+}
+.mileStone__dropdown {
+    z-index: 1053 !important;
+}

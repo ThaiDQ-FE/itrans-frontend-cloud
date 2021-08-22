@@ -1,0 +1,39 @@
+.dr__introduceWrapper {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+    word-break: break-word;
+    .dr__title {
+        font-weight: 600;
+        font-size: 26px;
+    }
+    .dr__documentWrapper {
+        position: relative;
+        .dr__action {
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0;
+            img {
+                margin: 0 5px;
+                width: 10px;
+                height: 10px;
+                cursor: pointer;
+                opacity: 0.5;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        &:hover {
+            .dr__action {
+                opacity: 1;
+            }
+        }
+    }
+    .dr__content {
+        margin: 0;
+        font-size: 18px;
+        padding: 0 45px;
+    }
+}

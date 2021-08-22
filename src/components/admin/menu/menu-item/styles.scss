@@ -1,0 +1,8 @@
+.adminMenuItem__menu {
+    z-index: 6001 !important;
+    .MuiPopover-paper {
+        top: 65px !important;
+        left: unset !important;
+        right: 30px !important;
+    }
+}

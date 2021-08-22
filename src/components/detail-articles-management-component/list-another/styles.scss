@@ -1,0 +1,81 @@
+.listAA__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .listAA__left,
+    .listAA__right {
+        width: 15%;
+    }
+    .listAA__center {
+        background: white;
+        width: 67.2%;
+        padding: 0 2% 50px 2%;
+        .listAA__title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .listAA__box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 25px;
+            .listAA__item {
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                .listAA__itemThumbnail {
+                    width: 100%;
+                    height: 150px;
+                }
+                .listAA__itemTitle {
+                    position: absolute;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    background: rgba(0, 0, 0, 0.35);
+                    padding: 5px;
+                    bottom: 0;
+                    height: 30px;
+                    width: 100%;
+                    transition: all 0.5s;
+                    .listAA__pFirst {
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        margin: 0;
+                    }
+                    .listAA__pSecond {
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        font-size: 14px;
+                        color: rgb(209, 209, 209);
+                        font-weight: 300;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    .listAA__itemTitle {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1270px) {
+    .listAA__wrapper {
+        display: block;
+        .listAA__left,
+        .listAA__right {
+            display: none;
+        }
+
+        .listAA__center {
+            margin: auto;
+            width: 980px;
+            padding: 0 30px;
+        }
+    }
+}

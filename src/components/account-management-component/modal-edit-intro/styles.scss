@@ -1,0 +1,23 @@
+.modal__editIntro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .modal__editIntroWrapper {
+        .modal__editTitle {
+            .valueError {
+                border: 1px solid red;
+            }
+        }
+        .modal__editContent {
+            margin-top: 30px;
+            .valueError {
+                border: 1px solid red;
+            }
+        }
+        .modal__editAction {
+            margin-top: 20px;
+            text-align: right;
+        }
+    }
+}

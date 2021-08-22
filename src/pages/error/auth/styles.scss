@@ -1,0 +1,15 @@
+.notAuth__wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    .notAuth__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: calc(100% - 400px);
+        height: auto;
+        padding: 50px;
+    }
+}

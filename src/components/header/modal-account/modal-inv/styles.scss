@@ -1,0 +1,25 @@
+.modalah__accountInv {
+    width: 900px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .modali__wrapper {
+        .modali__lineOne {
+            display: flex;
+        }
+        .modali__hr {
+            width: 200px;
+            margin: 10px auto;
+        }
+        .modali__action {
+            text-align: right;
+            margin-top: 15px;
+            .modali__update {
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

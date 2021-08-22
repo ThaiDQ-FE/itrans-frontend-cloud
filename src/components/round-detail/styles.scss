@@ -1,0 +1,169 @@
+.rd__content {
+    .rd__action {
+        opacity: 0;
+        img {
+            float: right;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+    &:hover {
+        .rd__action {
+            opacity: 1;
+        }
+    }
+}
+.roundDetail__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    .roundDetail__img {
+        width: 45%;
+        border: 5px double gray;
+        border-radius: 12px;
+        min-height: 300px;
+        max-height: 350;
+        object-fit: cover;
+    }
+    .roundDetail__info {
+        width: 45%;
+        .roundDetail__infomation {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px 0;
+            box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.06), 0 3px 6px 2px rgba(0, 0, 0, 0.02),
+                0 5px 12px 4px rgba(0, 0, 0, 0.03);
+            background: #f3f3f3;
+            border-radius: 12px;
+            .roundDetail__logo {
+                width: 18%;
+                object-fit: cover;
+            }
+            .roundDetail__ownerInfo {
+                width: 70%;
+
+                .roundDetail__owner {
+                    font-weight: 600;
+                    font-size: 24px;
+                }
+                .roundDetail__gmailYear,
+                .roundDetail__empStage {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .roundDetail__gmailYear {
+                    margin: 10px 0;
+                    .roundDetail__gmail {
+                        width: 70%;
+                    }
+                    .roundDetail__year {
+                        width: 25%;
+                    }
+                }
+                .roundDetail__empStage {
+                    .roundDetail__emp {
+                        width: 70%;
+                    }
+                    .roundDetail__stage {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+        .rd__content {
+            padding: 15px 20px;
+            border: 1px solid gray;
+            margin-top: 30px;
+            position: relative;
+            border-radius: 12px;
+            .rd__title {
+                font-size: 22px;
+                font-weight: 600;
+                position: absolute;
+                top: -20px;
+                background: white;
+            }
+            .rd__moneyPercent {
+                display: flex;
+                justify-content: space-between;
+                .rd__fundingMoney,
+                .rd__percent {
+                    width: 45%;
+                }
+            }
+
+            .rd__startEnd {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+                .rd__startDate,
+                .rd__endDate {
+                    width: 45%;
+                }
+            }
+            .rd__summary {
+                word-break: break-word;
+            }
+            .rd__editInfo {
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                opacity: 0;
+            }
+            &:hover {
+                .rd__editInfo {
+                    opacity: 0.4;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            .rd__roundDetailActoun {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 15px;
+                .rd__deleteRound {
+                    .rd__buttonDeleteRound {
+                        background: red;
+                        border-color: red;
+                    }
+                }
+                .rd__endRound {
+                    margin-left: 15px;
+                    .rd__buttonEndRound {
+                        background: red;
+                        border-color: red;
+                    }
+                }
+            }
+            .rd__endRound {
+            }
+            .rd__joinRound {
+                text-align: right;
+                margin-top: 15px;
+                .rd__joinButton {
+                    font-weight: 600;
+                    background: rgb(17, 152, 17);
+                    border-color: rgb(17, 152, 17);
+                    &:hover {
+                        background: rgb(27, 196, 27);
+                        border-color: rgb(27, 196, 27);
+                    }
+                }
+            }
+        }
+    }
+}
+.icon__Image {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.label__fontWeightV2 {
+    font-weight: 600;
+    font-size: 16px;
+}

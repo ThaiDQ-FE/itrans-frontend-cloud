@@ -1,0 +1,172 @@
+.nt__wrapper {
+    padding: 61px 0;
+    min-width: 480px;
+    max-width: 1248px;
+    margin: auto;
+    position: relative;
+    .nt__buttonAdd {
+        position: absolute;
+        top: 35px;
+        right: 0;
+    }
+    .nt__articleWrappers {
+        position: relative;
+        .nt__articleWrapper {
+            display: flex;
+            justify-content: space-between;
+            max-height: 200px;
+            box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                0 1px 8px 0 rgba(0, 0, 0, 0.12);
+
+            position: relative;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.4), 0 3px 4px 0 rgba(0, 0, 0, 0.24),
+                    0 1px 8px 0 rgba(0, 0, 0, 0.22);
+            }
+        }
+        &:nth-child(even) {
+            margin: 20px 0;
+        }
+        &:hover {
+            .nt__articleAction {
+                opacity: 1;
+            }
+        }
+        .nt__articleAction {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            opacity: 0;
+            .nt__articleEdit,
+            .nt__articleDelete {
+                width: 12px;
+                height: 12px;
+                opacity: 0.5;
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+            .nt__articleDelete {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .nt__createArticle {
+        position: absolute;
+        top: 30px;
+        right: -150px;
+    }
+}
+.nt__oneArticleWrapper {
+    padding: 61px 0;
+    .nt__contain {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 60px 0;
+        .nt__selfArticle {
+            width: 60%;
+            .nt__noSelf {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 50px 0;
+            }
+        }
+        .nt__hr {
+            width: 0.1%;
+            background: black;
+            opacity: 0.2;
+        }
+        .nt__linkArticle {
+            width: 35%;
+            .nt__noLink {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 50px 15px;
+                box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 8px 0 rgba(0, 0, 0, 0.12);
+            }
+            .nt__linkItem {
+                position: relative;
+                box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                padding: 5px 25px;
+                .nt__linkItemTime,
+                .nt__linkResource,
+                .nt__linkTitle {
+                    position: relative;
+                    .nt__linkItemTimeIcon {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .nt__linkItemTimeTime {
+                        display: inline;
+                        font-weight: 700;
+                        opacity: 0.6;
+                        margin-left: 5px;
+                        font-size: 16px;
+                        line-height: 2;
+                    }
+                    .nt__value {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-left: 5px;
+                    }
+                }
+
+                .nt__linkResource {
+                    margin: 10px 0;
+                }
+                border-bottom: 1px solid rgb(177, 177, 177);
+                &:nth-child(even) {
+                    margin: 15px 0;
+                }
+                .nt__linkActive {
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                    opacity: 0;
+                    .nt__linkEdit,
+                    .nt__linkDelete {
+                        width: 12px;
+                        height: 12px;
+                        opacity: 0.5;
+                        &:hover {
+                            opacity: 1;
+                            cursor: pointer;
+                        }
+                    }
+                    .nt__linkDelete {
+                        margin-left: 10px;
+                    }
+                }
+                &:hover {
+                    .nt__linkActive {
+                        opacity: 1;
+                    }
+                }
+            }
+            .noHr {
+                border-bottom: unset;
+            }
+        }
+    }
+}
+.nt__noArticleWrapper {
+    padding: 168.5px 0;
+    text-align: center;
+    .nt__noArticle {
+        margin: auto;
+        p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        button {
+            font-weight: 600;
+        }
+    }
+}

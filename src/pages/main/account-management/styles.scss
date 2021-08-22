@@ -1,0 +1,106 @@
+.am__loading {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: white;
+    z-index: 2000;
+    .am__imgLoading {
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.am__wrapper {
+    .am__buttonInvite {
+        position: absolute;
+        top: 215px;
+        right: 30px;
+        z-index: 5;
+        font-weight: 600;
+    }
+    .am__spanInvited {
+        position: absolute;
+        top: 210px;
+        right: 40px;
+        z-index: 5;
+        font-weight: 600;
+        color: rgb(53, 53, 53);
+        background: rgb(174, 174, 174);
+        padding: 10px 25px;
+    }
+    .am__container {
+        padding-top: 212px;
+        background-color: #f0f2f5;
+        position: relative;
+        .am__image {
+            position: absolute;
+            top: 110px;
+            left: 20px;
+            width: 170px;
+            height: 170px;
+            z-index: 10;
+            border-radius: 4px;
+            box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+                0 1px 3px 0 rgba(0, 0, 0, 0.12);
+            img {
+                object-fit: cover;
+                border-radius: 4px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .am__info {
+            position: absolute;
+            top: 110px;
+            left: 220px;
+            span {
+                &:first-child {
+                    font-weight: 600;
+                }
+            }
+        }
+        .ant-tabs {
+            .ant-tabs-nav {
+                margin: 0;
+                .ant-tabs-nav-wrap {
+                    margin-left: 194px;
+                    .ant-tabs-nav-list {
+                        .ant-tabs-tab {
+                            margin-left: 16px;
+
+                            background-color: transparent;
+                            padding: 15px 25px;
+                            justify-content: center;
+                            font-weight: 600;
+                            font-size: 16px;
+                            border-radius: 8px 8px 0 0;
+                            color: #000000;
+                            &:hover {
+                                background-color: rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                        .ant-tabs-tab-active {
+                            background: #ffffff;
+                            box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                                0 1px 5px 0 rgba(0, 0, 0, 0.12);
+                            border-radius: 8px 8px 0 0;
+                            color: #000000;
+                            &:hover {
+                                background-color: #ffffff;
+                            }
+                        }
+                        .ant-tabs-tab-btn {
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            .ant-tabs-content-holder {
+                background-color: #ffffff;
+                box-shadow: 0px -5px 15px -9px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

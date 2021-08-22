@@ -1,0 +1,98 @@
+.detailA__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .detailA__left,
+    .detailA__right {
+        width: 15%;
+    }
+    .detailA__center {
+        background: white;
+        width: 67.2%;
+        padding: 50px 2% 0 2%;
+        .detailA__hashTag {
+            .detailA__tag {
+                background: #ff8412;
+                border-color: #ff8412;
+                color: white;
+                font-weight: 600;
+            }
+        }
+        .detailA__title {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -1;
+        }
+        .detailA__ownerTime {
+            display: flex;
+            margin: 15px 0 8px 0;
+            .detailA__owner {
+                display: flex;
+                .detailA__img {
+                    width: 25px;
+                    height: 25px;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .detailA__ownerSpan {
+                    margin-left: 5px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 1.8;
+                }
+            }
+
+            .detailA__time {
+                color: #888;
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+        .deatiA__content {
+            overflow: hidden;
+        }
+        .detailA__summary {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+}
+.detailA__loading {
+    width: 100vw;
+    height: calc(100vh - 75px);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background: white;
+    img {
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (max-width: 1278px) {
+    .detailA__wrapper {
+        display: block;
+        .detailA__left,
+        .detailA__right {
+            display: none;
+        }
+
+        .detailA__center {
+            margin: auto;
+            width: 980px;
+            padding: 50px 30px 0 30px;
+        }
+    }
+}

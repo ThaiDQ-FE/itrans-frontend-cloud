@@ -1,0 +1,104 @@
+.aad__wrapper {
+    height: 95%;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    padding: 25px 25px 50px 25px;
+    position: relative;
+    .add__container {
+        height: 575px;
+        position: relative;
+        overflow: auto;
+        .aad__center {
+            width: 980px;
+            margin: auto;
+            .aad__hashTag {
+                .aad__tag {
+                    background: #ff8412;
+                    border-color: #ff8412;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+        }
+        .aad__title {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -1;
+        }
+        .aad__ownerTime {
+            display: flex;
+            margin: 15px 0 8px 0;
+            .aad__owner {
+                display: flex;
+                .aad__img {
+                    width: 25px;
+                    height: 25px;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .aad__ownerSpan {
+                    margin-left: 5px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 1.8;
+                }
+            }
+
+            .aad__time {
+                color: #888;
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+        .aad__summary {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+    .aad__buttonAction {
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        right: 22px;
+        .aad__action {
+            background: red;
+            border-color: red;
+            margin-left: 15px;
+            &:hover {
+                font-weight: 600;
+            }
+        }
+        .aad__back {
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+}
+.aad__loading {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1;
+    img {
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

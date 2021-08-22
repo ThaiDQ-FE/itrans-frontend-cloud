@@ -1,0 +1,94 @@
+.amrc__wrapper {
+    height: 688.6px;
+    padding: 20px 30px 40px 30px;
+    .amrc__tenToChuc {
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+        position: relative;
+        .amrc__thumbnail {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-right: 5px;
+        }
+        .amrc__valueTenToChuc {
+            margin-left: 30px;
+        }
+    }
+    .amrc__valueSTKG {
+        margin: 0;
+        text-align: right;
+    }
+    .amrc__valuePTCP {
+        margin: 0;
+        text-align: right;
+    }
+    .amrc__valueMoTa {
+        max-width: 250px;
+        margin: 0;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+    .amrc__valueNgayGoi {
+        margin: 0;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+    .amrc__valueNgayKetThuc {
+        margin: 0;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+    .amrc__container {
+        display: flex;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        justify-content: space-between;
+        .amrc__title {
+            width: 45%;
+        }
+        .amrc__search {
+            width: 45%;
+        }
+    }
+    .amrc__expiration {
+        background: #c0c0c0;
+        color: black;
+        border-color: #c0c0c0;
+        font-weight: 600;
+    }
+    .amrc__delete {
+        background: red;
+        border-color: red;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    .amrc__active {
+        background: #56db56;
+        color: white;
+        border-color: #56db56;
+        font-weight: 600;
+    }
+    .amrc__pending {
+        background: orange;
+        color: white;
+        border-color: orange;
+        font-weight: 600;
+    }
+}
+.amrc__deleteButton {
+    margin-left: 10px;
+    background: red;
+    border-color: red;
+    color: rgb(255, 255, 255);
+}

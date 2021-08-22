@@ -1,0 +1,56 @@
+.ffr__wrapper {
+    padding: 35px 0;
+    .ffr__container {
+        width: 1080px;
+        margin: auto;
+        .ffr__dislayGrid {
+            box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                0 1px 8px 0 rgba(0, 0, 0, 0.12);
+            display: grid;
+            grid-template-columns: 100px 200px 200px 200px 146px 146px;
+            background-color: #fff;
+            color: #444;
+            padding: 10px;
+            max-height: 138px;
+            grid-gap: 15px;
+            min-width: 640px;
+            height: 120px;
+            position: relative;
+            .box {
+                .ant-select {
+                    .ant-select-selector {
+                        max-height: 76px;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        &::-webkit-scrollbar-track {
+                            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                            border-radius: 10px;
+                            background-color: #f5f5f5;
+                        }
+
+                        &::-webkit-scrollbar {
+                            width: 5px;
+                            background-color: #f5f5f5;
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 10px;
+                            -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                            background-color: #555;
+                        }
+                    }
+                }
+            }
+            .ffr__button {
+                display: flex;
+                align-items: flex-end;
+                position: absolute;
+                bottom: 12px;
+                right: 25px;
+                .ffr__ads {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

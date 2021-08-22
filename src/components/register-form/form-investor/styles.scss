@@ -1,0 +1,283 @@
+.fi__wrapper {
+    width: 65vw;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: auto;
+    border-radius: 12px;
+    font-family: "Montserrat", sans-serif;
+    .fi__container {
+        width: 100%;
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 35px;
+        }
+        .fi__form {
+            padding: 0 55px 35px 55px;
+            .fi__basicInfo {
+                display: flex;
+                justify-content: space-between;
+                .fi__basicImageWrapper {
+                    width: 25%;
+                    .fi__imageInfo {
+                        height: 125px;
+                        margin-bottom: 20px;
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                        position: relative;
+                        padding: 0 20px 0 0;
+                        .fi__userLogo {
+                            object-fit: cover;
+                        }
+                        .fi__file {
+                            display: none;
+                        }
+
+                        &:hover {
+                            .fi__camera {
+                                opacity: 1;
+                            }
+                        }
+                        .fi__span {
+                            position: absolute;
+                            cursor: pointer;
+                            height: 25px;
+                            right: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 100%;
+                            &:hover {
+                                .fi__camera {
+                                    opacity: 1;
+                                }
+                            }
+                            .modal__inLABELSpin {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            .fi__camera {
+                                width: 16px;
+                                height: 16px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+                .fi__infoBasic {
+                    width: 70%;
+                    .fi__lineOne {
+                        display: flex;
+                        justify-content: space-between;
+                        .fi__tenNhaQuyDauTu {
+                            width: 50%;
+                        }
+                        .fi__namThanhLap,
+                        .fi__soLuongThanhVien {
+                            width: 18.5%;
+                        }
+                    }
+                    .fi__lineTwo {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        .fi__linkWebsite {
+                            width: 40%;
+                        }
+                        .fi__truSoChinh {
+                            width: 30%;
+                            .fi__selectHead {
+                                display: block;
+                            }
+                        }
+                        .fi__taxCode {
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+            .fi__investmentInfo {
+                .fi__iLineOne {
+                    display: flex;
+                    justify-content: space-between;
+                    .fi__giaiDoanMuonDauTu {
+                        width: 40%;
+                        .fi__selectStage {
+                            display: block;
+                            max-height: 76px;
+                            border: 1px solid #d9d9d9;
+                            .ant-select-selector {
+                                max-height: 76px;
+                                overflow-x: hidden;
+                                overflow-y: auto;
+                                &::-webkit-scrollbar-track {
+                                    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                    border-radius: 10px;
+                                    background-color: #f5f5f5;
+                                }
+
+                                &::-webkit-scrollbar {
+                                    width: 5px;
+                                    background-color: #f5f5f5;
+                                }
+
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: 10px;
+                                    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                                    background-color: #555;
+                                }
+                            }
+                        }
+                    }
+                    .fi__linhVucKinhDoanhMuonDauTu {
+                        width: 55%;
+
+                        .fi__selectIndus {
+                            display: block;
+                            max-height: 76px;
+                            border: 1px solid #d9d9d9;
+                            .ant-select-selector {
+                                max-height: 76px;
+                                overflow-x: hidden;
+                                overflow-y: auto;
+                                &::-webkit-scrollbar-track {
+                                    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                    border-radius: 10px;
+                                    background-color: #f5f5f5;
+                                }
+
+                                &::-webkit-scrollbar {
+                                    width: 5px;
+                                    background-color: #f5f5f5;
+                                }
+
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: 10px;
+                                    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                                    background-color: #555;
+                                }
+                            }
+                        }
+                    }
+                }
+                .fi__iLineTwo {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .fi__khuVucDauTu {
+                        width: 28%;
+                        .fi__selectKVDT {
+                            display: block;
+                            max-height: 76px;
+                            border: 1px solid #d9d9d9;
+                            .ant-select-selector {
+                                max-height: 76px;
+                                overflow-x: hidden;
+                                overflow-y: auto;
+                                &::-webkit-scrollbar-track {
+                                    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                    border-radius: 10px;
+                                    background-color: #f5f5f5;
+                                }
+
+                                &::-webkit-scrollbar {
+                                    width: 5px;
+                                    background-color: #f5f5f5;
+                                }
+
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: 10px;
+                                    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                                    background-color: #555;
+                                }
+                            }
+                        }
+                    }
+                    .fi__ul {
+                        width: 28%;
+                        .fi__selectVMDT {
+                            display: block;
+                            max-height: 76px;
+                            border: 1px solid #d9d9d9;
+                            .ant-select-selector {
+                                max-height: 76px;
+                                overflow-x: hidden;
+                                overflow-y: auto;
+                                &::-webkit-scrollbar-track {
+                                    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                                    border-radius: 10px;
+                                    background-color: #f5f5f5;
+                                }
+
+                                &::-webkit-scrollbar {
+                                    width: 5px;
+                                    background-color: #f5f5f5;
+                                }
+
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: 10px;
+                                    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                                    background-color: #555;
+                                }
+                            }
+                        }
+                    }
+                    .fi__moneyWrapper {
+                        width: 38%;
+                        .fi__moneyContainer {
+                            display: flex;
+                            justify-content: space-between;
+                            .fi__min,
+                            .fi__max {
+                                width: 45%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fi__button {
+            display: flex;
+            justify-content: space-between;
+            .fi__buttonBack {
+                opacity: 0.5;
+                transition: all 0.2s;
+                cursor: pointer;
+                margin-left: 20px;
+                margin-bottom: 15px;
+                img {
+                    width: 15px;
+                    transform: rotate(180deg);
+                    display: block;
+                    margin: auto;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .fi__buttonNext {
+                opacity: 0.5;
+                transition: all 0.2s;
+                cursor: pointer;
+                margin-right: 20px;
+                margin-bottom: 15px;
+                img {
+                    display: block;
+                    width: 15px;
+                    margin: auto;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

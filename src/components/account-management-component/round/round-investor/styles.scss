@@ -1,0 +1,137 @@
+.rbii__wrapper {
+    padding: 65px 35px;
+    position: relative;
+    .rbii__addNewDeal {
+        position: absolute;
+        top: 20px;
+        right: 60px;
+    }
+    .rbii__container {
+        .rbii__listRound {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 40px;
+            max-width: 1024px;
+            margin: auto;
+            .rbii__itemOrg {
+                position: relative;
+                border-radius: 9px;
+                box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.06), 0 3px 6px 2px rgba(0, 0, 0, 0.02),
+                    0 5px 12px 4px rgba(0, 0, 0, 0.03);
+                &:hover {
+                    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.26), 0 3px 6px 0 rgba(0, 0, 0, 0.22),
+                        0 5px 12px 4px rgba(0, 0, 0, 0.19);
+                }
+                .ant-card-cover {
+                    margin: 0;
+                    padding: 30px;
+                }
+                .ant-card-body {
+                    text-align: center;
+                    img {
+                        width: 170px;
+                        height: 170px;
+                        border: 1px solid rgb(224, 224, 224);
+                        object-fit: cover;
+                    }
+                    .ant-card-meta {
+                        .ant-card-meta-detail {
+                            .ant-card-meta-title {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                .rbii__name,
+                .ribo__stage,
+                .rbii__startDate,
+                .rbii__endDate,
+                .rbii__summary {
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    display: -webkit-box;
+                }
+                .rbii__name {
+                    margin-top: 10px;
+                    .rbii__img {
+                        position: relative;
+                        img {
+                            position: absolute;
+                            width: 20px;
+                            height: 18.4px;
+                            border: none;
+                            padding: 0;
+                            top: 0;
+                        }
+                    }
+                    .rbii__nameValue {
+                        font-weight: 600;
+                        font-size: 18px;
+                        margin-left: 25px;
+                    }
+                }
+                .rbii__position {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    margin: 0;
+                }
+                .rbii__reject,
+                .rbii__cancel {
+                    background: #c0c0c0;
+                    color: black;
+                    border-color: #c0c0c0;
+                    font-weight: 600;
+                }
+                .rbii__pending {
+                    background: orange;
+                    color: white;
+                    border-color: orange;
+                    font-weight: 600;
+                }
+                .rbii__accept {
+                    background: rgb(73, 73, 255);
+                    color: white;
+                    border-color: rgb(73, 73, 255);
+                    font-weight: 600;
+                }
+                .rbii__done {
+                    background: #56db56;
+                    color: white;
+                    border-color: #56db56;
+                    font-weight: 600;
+                }
+            }
+        }
+        .rbii__listRoundNormal {
+            display: block;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            img {
+                width: 35px;
+            }
+        }
+        .ol__paging {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}
+.rbii__warpperNormal {
+    height: 385px;
+    position: relative;
+    .rbii__container {
+        .rbii__listRoundNormal {
+            .rbii__noRound {
+                p {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

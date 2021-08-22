@@ -1,0 +1,212 @@
+.rft__wrapper {
+    padding: 0px 200px 25px 200px;
+    box-sizing: border-box;
+    .rft__container {
+        display: flex;
+        justify-content: center;
+        .rft__left {
+            width: 700px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .rft__calendarWrapper {
+                box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                .ant-picker-calendar {
+                    .ant-picker-calendar-header {
+                        margin-right: 20px;
+                        .ant-radio-group {
+                            .ant-radio-button-wrapper {
+                                &:last-child {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                    }
+                    .ant-picker-panel {
+                        .ant-picker-date-panel {
+                            .ant-picker-body {
+                                .ant-picker-content {
+                                    thead {
+                                        tr {
+                                            th {
+                                                font-weight: 600;
+                                                padding: 0 30px 5px 0;
+                                            }
+                                        }
+                                    }
+                                    tbody {
+                                        tr {
+                                            height: 75px;
+                                            width: 75px;
+                                            .ant-picker-cell {
+                                                height: 75px;
+                                                width: 75px;
+                                                .ant-picker-cell-inner {
+                                                    width: 75px;
+                                                    height: 75px;
+                                                    .ant-picker-calendar-date-content {
+                                                        height: 30px;
+                                                        overflow: unset;
+                                                        .events {
+                                                            list-style-type: none;
+                                                            padding-left: 50px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .rft__timeAndButton {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                    .rft__time {
+                    }
+                    .rft__button {
+                        margin-left: 10px;
+                    }
+                }
+                .rft__errorThem {
+                    display: flex;
+                    color: red;
+                    justify-content: center;
+                    padding-top: 20px;
+                }
+            }
+        }
+        .rft__right {
+            margin-left: 50px;
+            width: 300px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .rft__rightBooking {
+                box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                padding: 20px;
+                p {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+                .rft__ulList {
+                    padding: 0 5px;
+                    ul {
+                        list-style-type: none;
+                        margin: auto;
+                        max-height: 155px;
+                        overflow: auto;
+                        padding: 5px 20px;
+                        .li__li {
+                            margin: auto;
+                            box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                                0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                            padding: 10px;
+                            width: 150px;
+                            text-align: center;
+                            position: relative;
+                            &:nth-child(even) {
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            }
+                            .li__cancel {
+                                width: 8px;
+                                height: 8px;
+                                position: absolute;
+                                top: -4px;
+                                right: 4px;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    opacity: 0.5;
+                                    cursor: pointer;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .rft__buttonUl {
+                        display: flex;
+                        margin-top: 20px;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+            .rft__rightBooked {
+                box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                padding: 20px;
+                margin-top: 20px;
+                position: relative;
+                .rft__refresh {
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 24px;
+                    right: 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.5;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+                p {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+                .rft__ulList {
+                    padding: 0 5px;
+                    ul {
+                        list-style-type: none;
+                        margin: auto;
+                        max-height: 235px;
+                        overflow: auto;
+                        padding: 5px 20px;
+                        .li__li {
+                            margin: auto;
+                            box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                                0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                            padding: 10px;
+                            width: 150px;
+                            text-align: center;
+                            position: relative;
+                            &:nth-child(even) {
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .booked {
+                        }
+                        .notthing {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.ant-picker-footer {
+    display: flex;
+    justify-content: center;
+    .ant-picker-ranges {
+        .ant-picker-now {
+            display: none;
+        }
+    }
+}
+.rft__drop {
+    top: 540px !important;
+}

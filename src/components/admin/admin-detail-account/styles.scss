@@ -1,0 +1,237 @@
+.ada__wrapper {
+    height: 100%;
+    padding: 20px 30px 40px 30px;
+    position: relative;
+    .ada__loadingWrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        border-radius: 8px;
+        .ada__loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .ada__infoTop {
+        height: 30%;
+        display: flex;
+        .ada__itLeft {
+            width: 15%;
+            height: 100%;
+            position: relative;
+            .ada__logo {
+                width: 125px;
+                height: 125px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 1px solid rgb(224, 224, 224);
+            }
+        }
+        .ada__itRight {
+            width: 78%;
+            position: relative;
+            .ada__name {
+                font-size: 32px;
+                font-weight: 600;
+                position: absolute;
+                top: 30%;
+                transform: translateY(-30%);
+            }
+            .ada__yearMemGmail {
+                margin-top: 90px;
+                display: flex;
+                .ada__year {
+                    display: flex;
+                    position: relative;
+                    .ada__yearImg {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .ada__yearSpan {
+                        margin-left: 20px;
+                    }
+                }
+                .ada__member {
+                    display: flex;
+                    position: relative;
+                    .ada__memberImg {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .ada__memberSpan {
+                        margin-left: 20px;
+                    }
+                }
+                .ada__gmail {
+                    display: flex;
+                    position: relative;
+                    margin-left: 50px;
+                    .ada__gmailImg {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .ada__gmailSpan {
+                        margin-left: 20px;
+                    }
+                }
+                .ada__website {
+                    display: flex;
+                    position: relative;
+                    margin-left: 50px;
+                    .ada__websiteImg {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .ada__websiteSpan {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .ada__hr {
+        margin: 10px 0;
+    }
+    .ada__infoBottom {
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        .ada__ibLeft {
+            width: 48%;
+            height: calc(100% - 38px);
+            padding: 20px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 45% 55%;
+            .ada__box {
+                margin: 15px 0;
+                .ada__spanWeight {
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+                span {
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    font-size: 18px;
+                }
+            }
+        }
+        .ada__ibRight {
+            width: 48%;
+            height: calc(100% - 38px);
+            padding: 20px;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 3fr 3fr 3fr;
+            overflow: auto;
+
+            .ada__rightLink {
+                height: 220px;
+                text-decoration: none;
+                box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+                padding: 20px 10px;
+                &:hover {
+                    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                        0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                    cursor: pointer;
+                }
+                .ada__rightBox {
+                    text-align: center;
+
+                    .ada__rightBoxImg {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                    .ada__rigtName {
+                        font-weight: 600;
+                        color: black;
+                    }
+                    .ada__rightChucVu {
+                        color: #ff8412;
+                    }
+                }
+            }
+            .ada__rightBoxNo {
+                text-align: center;
+                box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+                padding: 20px 10px;
+                max-height: 210px;
+                &:hover {
+                    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                        0 1px 8px 0 rgba(0, 0, 0, 0.12);
+                }
+                .ada__rightBoxImg {
+                    object-fit: cover;
+                    object-position: top;
+                    width: 100px;
+                    height: 100px;
+                }
+                .ada__rigtName {
+                    font-weight: 600;
+                    color: black;
+                }
+                .ada__rightChucVu {
+                    color: #ff8412;
+                }
+            }
+        }
+        .ada__ibNoTeam {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            .ada__noTeam {
+                font-size: 18px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .ada__action {
+        text-align: right;
+        .ada__aHuy {
+            background: gray;
+            border-color: gray;
+            &:hover {
+                background: rgb(187, 187, 187);
+                border-color: rgb(187, 187, 187);
+            }
+        }
+        .ada__aDuyet {
+            margin-left: 20px;
+            background: #1890ff;
+            border-color: #1890ff;
+            &:hover {
+                background: #1890ff;
+                border-color: #1890ff;
+            }
+        }
+    }
+}

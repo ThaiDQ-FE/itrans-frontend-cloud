@@ -1,0 +1,18 @@
+.modal__addRoundLineOne,
+.modal__addRoundLineTwo {
+    .error__input {
+        border: 1px solid red;
+    }
+}
+.modal__crIMGEror {
+    border: 1px dashed red;
+}
+.modal__crLoading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.round__dropdown {
+    z-index: 1053 !important;
+}

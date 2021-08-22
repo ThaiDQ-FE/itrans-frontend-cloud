@@ -1,0 +1,25 @@
+.tox-statusbar {
+    display: none !important;
+}
+.modal__contentNewsLoading {
+    width: 980px;
+    height: 350px;
+    position: absolute;
+    z-index: 2;
+    .spin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.button__notDis {
+    display: block;
+}
+.button__dis {
+    display: none;
+}
+.img-responsive {
+    width: 100%;
+    height: 400px;
+}

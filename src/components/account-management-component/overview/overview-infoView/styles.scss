@@ -1,0 +1,37 @@
+.ovic__wrapper {
+    padding: 25px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    &:hover {
+        box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    }
+    .ovic__container {
+        .ovic__thongTin {
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .ovic__displayGrid {
+            display: grid;
+            grid-template-columns: 4.2fr 5.8fr;
+            grid-gap: 10px;
+            .ovic__item {
+                .ovic__ulList {
+                    margin-bottom: 0;
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+.ovic__wordBreak {
+    word-break: break-word;
+}
+.ovic__fontWeight {
+    font-weight: 600;
+}
+.ovic__hr {
+    width: 40%;
+    margin: 20px auto;
+}

@@ -1,0 +1,47 @@
+.om__wrapper {
+    margin-top: 75px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    .om__banner {
+        height: 400px;
+        width: 100%;
+        position: relative;
+        .om__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        .om__titleWrapper {
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            .om__titleSolo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                .om__title {
+                    color: white;
+                    font-size: 72px;
+                    font-weight: 500;
+                }
+                .om__slo {
+                    color: white;
+                    font-size: 24px;
+                }
+                .om__slogan {
+                    color: white;
+                }
+            }
+        }
+    }
+    .om__hr {
+        width: 200px;
+        margin: auto;
+    }
+}

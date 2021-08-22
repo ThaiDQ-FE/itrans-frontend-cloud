@@ -1,0 +1,44 @@
+.comment {
+    width: 980px;
+    margin: auto;
+    padding-top: 35px;
+    .comment_HVD {
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
+textarea {
+    resize: none !important;
+}
+.ant-comment-content-author {
+    .ant-comment-content-author-name {
+        color: #0033ff;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .ant-comment-content-author-time {
+        color: #999999;
+        font-size: 11px;
+        text-decoration: underline dotted rgb(153, 153, 153);
+    }
+}
+.ant-comment-content-detail {
+    font-size: 18px;
+}
+.comment__button {
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.comment__textarea {
+    margin: 0;
+}
+.ant-list-split {
+    width: 700px;
+    margin: auto;
+    .ant-spin-nested-loading {
+    }
+}
+.ant-comment-inner {
+    padding: 0;
+}

@@ -1,0 +1,25 @@
+.modalah__accountReset {
+    width: 300px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .mrap__new {
+        margin: 15px 0;
+    }
+    .mrap__action {
+        margin-top: 15px;
+        text-align: right;
+        .mrap__capnhat {
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+    .mrap__inputError {
+        border: 1px solid red;
+        &:hover {
+            border: 1px solid red;
+        }
+    }
+}

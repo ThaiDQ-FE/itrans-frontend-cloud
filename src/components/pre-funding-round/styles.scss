@@ -1,0 +1,18 @@
+.pfr__wrapper {
+    padding: 25px 25px;
+    .pfr__container {
+        padding: 25px 15px;
+        box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+        .pfr__paging {
+            text-align: right;
+            padding: 20px 20px 0 0;
+        }
+    }
+}
+.prefr__des {
+    max-width: 1000px;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

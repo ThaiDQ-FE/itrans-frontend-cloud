@@ -1,0 +1,205 @@
+.lds__container {
+    .lds__listRound {
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        // grid-gap: 20px;
+        // max-width: 1200px;
+        // margin:auto;
+
+        .lds__itemInves {
+            position: relative;
+            border-radius: 9px;
+            box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.06), 0 3px 6px 0 rgba(0, 0, 0, 0.02),
+                0 5px 12px 4px rgba(0, 0, 0, 0.03);
+            &:hover {
+                box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.26), 0 3px 6px 0 rgba(0, 0, 0, 0.22),
+                    0 5px 12px 4px rgba(0, 0, 0, 0.19);
+            }
+            // .ant-card-cover {
+            //     // margin: 0;
+            //     // padding: 30px;
+            // }
+            .ant-card-body {
+                padding: 19px;
+                img {
+                    text-align: center;
+                    width: 200px;
+                    height: 170px;
+                    border: 1px solid rgb(194, 194, 194);
+                    padding: 20px;
+                }
+
+                .ant-card-meta {
+                    .ant-card-meta-detail {
+                        .ant-card-meta-title {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.lds__mid {
+    margin: auto;
+    width: 1300px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .cd__oneItem {
+        width: 250px;
+    }
+    .cd__twoItem {
+        width: 500px;
+        .slick-list {
+            border-radius: 8px;
+            .slick-slide {
+                padding: 5px;
+            }
+        }
+    }
+    .cd__threItem {
+        width: 750px;
+        .slick-list {
+            border-radius: 8px;
+            .slick-slide {
+                padding: 5px;
+            }
+        }
+    }
+    .cd__fourItem {
+        width: 1000px;
+        .slick-list {
+            border-radius: 8px;
+            .slick-slide {
+                padding: 5px;
+            }
+        }
+    }
+    .cd__morethan {
+        width: unset;
+        .slick-list {
+            border-radius: 8px;
+            .slick-slide {
+                padding: 5px;
+            }
+        }
+    }
+    .lds__title {
+        font-size: 26px;
+        font-weight: 500;
+    }
+}
+.slick-slider {
+    .slick-arrow {
+        &::before {
+            color: black;
+            opacity: 0.4;
+        }
+    }
+}
+.span_text {
+    font-weight: 650;
+}
+.lds__name {
+    text-align: center;
+    width: 200px;
+}
+#lds_accept {
+    background: #56db56;
+    color: white;
+    border-color: #56db56;
+    font-weight: 600;
+}
+#lds_reject {
+    background: #c0c0c0;
+    color: black;
+    border-color: #c0c0c0;
+    font-weight: 600;
+}
+#lds_pending {
+    background: orange;
+    color: white;
+    border-color: orange;
+    font-weight: 600;
+}
+.ant-modal-close-x {
+    width: 30px;
+    line-height: 25px;
+}
+.lds_textDeal {
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.06), 0 3px 6px 2px rgba(0, 0, 0, 0.02), 0 5px 12px 4px rgba(0, 0, 0, 0.03);
+}
+.lds_textDeal {
+    .lds__introduceWrapper {
+        margin: 0 auto;
+        width: 95%;
+        height: 50%;
+        position: relative;
+        word-break: break-word;
+        .lds__title {
+            font-weight: 600;
+            font-size: 26px;
+        }
+        .lds__content {
+            margin: 0;
+            font-size: 18px;
+            padding: 0 45px;
+        }
+        .lds__action {
+            position: absolute;
+            right: 0;
+            opacity: 0;
+            img {
+                margin: 0 5px;
+                width: 10px;
+                height: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    &:hover {
+        .lds__action {
+            opacity: 1;
+        }
+    }
+}
+
+.lds__dealInvs {
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    .lbs__title {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .lds_textDeal {
+        padding: 20px;
+        .lds__introduceWrapper {
+            .lds__action {
+                top: -25px;
+                right: -40px;
+                opacity: 0;
+            }
+        }
+        &:hover {
+            .lds__introduceWrapper {
+                .lds__action {
+                    opacity: 1;
+                }
+            }
+        }
+        .lbs__percent {
+            margin: 0 30px;
+        }
+        .lbs__labelNormal {
+            font-weight: normal;
+        }
+        .lbs__des {
+            margin-top: 15px;
+            display: block;
+            word-break: break-word;
+        }
+    }
+}

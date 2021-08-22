@@ -1,0 +1,10 @@
+.amgcRegion__name {
+    p {
+        margin: 0;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+        cursor: context-menu;
+    }
+}

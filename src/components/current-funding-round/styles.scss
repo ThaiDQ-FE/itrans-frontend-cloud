@@ -1,0 +1,278 @@
+.cfr__wrapper {
+    padding: 25px 25px;
+    position: relative;
+    .cfr__container {
+        padding: 25px 15px;
+        box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    }
+    .cfr__tvgv {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        background: #2ecc71;
+        border-color: #2ecc71;
+        &:hover {
+            background: #3ac473;
+            border-color: #3ac473;
+        }
+    }
+}
+.round__tenDoanhNghiep {
+    display: flex;
+    .round__thumbnail {
+        width: 16px;
+        height: 16px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .round__pTenDoanhNghiep {
+        margin-bottom: 0;
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+}
+
+.round__qlvgvAction {
+    display: flex;
+    justify-content: flex-end;
+    .round__power,
+    .round__edit,
+    .round__trash,
+    .round__save,
+    .round__cancel {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        margin: 0 5px;
+        img {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.ant-table-thead {
+    .ant-table-cell {
+        text-align: center;
+    }
+}
+.subround__action {
+    display: flex;
+    justify-content: center;
+    .subround__accept,
+    .subround__reject {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+    .subround__accept {
+        margin-right: 10px;
+    }
+}
+.cfr__modal {
+    width: 550px !important;
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    .ant-modal-content {
+        width: 550px;
+        .ant-modal-header {
+            display: none;
+        }
+        .ant-modal-body {
+            position: relative;
+            .cfr__closeModal {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                width: 14px;
+                height: 14px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.5;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            .cfr__form {
+                padding: 15px 10px;
+                .cfr__lineOne {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .cfr__wrapperSTKG {
+                        width: 55%;
+                    }
+                    .cfr__wrapperPTCP {
+                        width: 43%;
+                    }
+                }
+                .cfr__lineArea {
+                    margin-bottom: 20px;
+                    .cfr__formMT {
+                        resize: none;
+                    }
+                }
+                .cfr__datePicker {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .cfr__startDate,
+                    .cfr__endDate {
+                        .ant-picker {
+                            display: block;
+                        }
+                        .cfr__dpngv,
+                        .cfr__dpnkt {
+                            width: 190px;
+                        }
+                    }
+                    .cfr__warningSign {
+                        width: 39.8px;
+                        height: 39.8px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .cfr__submitForm {
+                    text-align: right;
+                    .cfr__sfTao {
+                        background: #1890ff;
+                        border-color: #1890ff;
+                        &:hover {
+                            background: #40a9ff;
+                            border-color: #40a9ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.cfr__dpngvdrop {
+    top: 145px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.cfr__inputEndDate,
+.cfr__inputStartDate {
+    .cfr__input {
+        padding: 0;
+        text-align: center;
+        border: none;
+        background: transparent;
+        &:focus {
+            box-shadow: unset;
+        }
+    }
+}
+.cfr__inputEndDate {
+    text-align: center;
+}
+.cfr__des {
+    max-width: 250px;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.cfr__dess {
+    max-width: 350px;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.cfr__inputPtcp {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    .cfr__ptcp {
+        .ant-input-wrapper {
+            .ant-input {
+                text-align: right;
+                padding: 0;
+                border: none;
+                background: transparent;
+                &:focus {
+                    box-shadow: unset;
+                }
+            }
+            .ant-input-group-addon {
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+    .cfr__ptcpDefault {
+        width: unset;
+        .ant-input-wrapper {
+            width: unset;
+            .ant-input {
+                display: none;
+            }
+            .ant-input-group-addon {
+                background: transparent;
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+}
+.cfr__inputStkg {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    .cfr__stkg {
+        .ant-input-wrapper {
+            .ant-input {
+                text-align: right;
+                padding: 0;
+                border: none;
+                background: transparent;
+                &:focus {
+                    box-shadow: unset;
+                }
+            }
+            .ant-input-group-addon {
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+    .cfr__stkgDefault {
+        width: unset;
+        .ant-input-wrapper {
+            width: unset;
+            .ant-input {
+                display: none;
+            }
+            .ant-input-group-addon {
+                background: transparent;
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+}
+.round__textArea {
+    resize: none;
+}

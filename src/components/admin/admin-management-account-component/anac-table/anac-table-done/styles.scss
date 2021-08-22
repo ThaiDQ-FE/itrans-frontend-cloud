@@ -1,0 +1,37 @@
+.anrc__delete {
+    background: red;
+    border-color: red;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.anrc__active {
+    background: #56db56;
+    color: white;
+    border-color: #56db56;
+    font-weight: 600;
+}
+.anac__mail,
+.anac__name {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+.anac__button {
+    .anac__block {
+        background: red !important;
+        border-color: red !important;
+        &:hover {
+            background: red;
+            border-color: red;
+        }
+    }
+    .anac__open {
+        background: #1890ff !important;
+        border-color: #1890ff !important;
+        &:hover {
+            background: #1890ff;
+            border-color: #1890ff;
+        }
+    }
+}

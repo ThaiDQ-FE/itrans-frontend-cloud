@@ -1,0 +1,39 @@
+.input-right-alight {
+    text-align: right;
+}
+.cfr__modal {
+    .mcd__info {
+        padding: 15px 20px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        position: relative;
+        margin-top: 25px;
+        .mcfinfo__h3 {
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            background: white;
+        }
+        .mcfinfo__lineOne {
+            display: flex;
+            justify-content: space-between;
+            .mcfinfo__money,
+            .mcfinfo__per {
+                width: 30%;
+            }
+        }
+    }
+    .mud__form {
+        padding: 0 20px 15px 20px !important;
+    }
+}
+.readonly {
+    &:hover {
+        cursor: context-menu;
+        border-color: #d9d9d9;
+    }
+    &:focus {
+        box-shadow: unset;
+        border-color: #d9d9d9;
+    }
+}
